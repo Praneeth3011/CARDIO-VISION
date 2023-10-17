@@ -1,0 +1,333 @@
+<style>
+    body {
+        font-family: 'Poppins', sans-serif;
+    }
+    .back {
+        background-image: url("https://www.scripps.org/sparkle-assets/seo_thumbnails/news_items/4417/facebook-4035002951640f8314ee61cae03ddcb9.jpg");
+        height: 100vh;
+        background-size: cover;
+    }
+    .top {
+        height: 50px;
+        width: 1535px;  
+    }
+    .container {
+        border-style: solid;
+        border-color: white;
+        margin-top: 80px;
+        height: 40vh;
+        border-radius: 20px;
+        padding: 20px;
+    }
+    .but {
+        margin-left: 900px;
+    }
+    .cssbuttons-io-button {
+  background: #e71733a7;
+  color: white;
+  font-family: inherit;
+  padding: 0.35em;
+  padding-left: 1.2em;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 0.9em;
+  border: none;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0 0 1.6em -0.6em #e71733a7;
+  overflow: hidden;
+  position: relative;
+  height: 2.8em;
+  padding-right: 3.3em;
+}
+
+.cssbuttons-io-button .icon {
+  background: white;
+  margin-left: 1em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 0.7em;
+  box-shadow: 0.1em 0.1em 0.6em 0.2em #e71733a7;
+  right: 0.3em;
+  transition: all 0.3s;
+}
+
+.cssbuttons-io-button:hover .icon {
+  width: calc(100% - 0.6em);
+}
+
+.cssbuttons-io-button .icon svg {
+  width: 1.1em;
+  transition: transform 0.3s;
+  color: #e71733a7;
+}
+
+.cssbuttons-io-button:hover .icon svg {
+  transform: translateX(0.1em);
+}
+
+.cssbuttons-io-button:active .icon {
+  transform: scale(0.95);
+}
+.sback {
+        background-image: url("https://content.health.harvard.edu/wp-content/uploads/2023/08/5d1bd5ec-2d4d-415c-bf57-897704ce555e.jpg");
+        height: 100vh;
+        background-size: cover;
+}
+
+.login-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: rgba(24, 20, 20, 0.987);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 1.5px;
+  border-color: white;
+}
+
+.login-box .user-box {
+  position: relative;
+}
+
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+
+.login-box .user-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #bdb8b8;
+  font-size: 12px;
+}
+
+.login-box form a {
+  display: inline-block;
+  padding: 10px 20px;
+  color: #ffffff;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 40px;
+  letter-spacing: 4px
+}
+
+.login-box a:hover {
+  background: #03f40f;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #03f40f,
+              0 0 25px #03f40f,
+              0 0 50px #03f40f,
+              0 0 100px #03f40f;
+}
+
+.login-box a span {
+  position: absolute;
+  display: block;
+}
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+
+  50%,100% {
+    left: 100%;
+  }
+}
+
+.login-box a span:nth-child(1) {
+  bottom: 2px;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #03f40f);
+  animation: btn-anim1 2s linear infinite;
+}
+
+.button {
+  line-height: 1;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: .75rem;
+  background-color: var(--clr);
+  color: #fff;
+  border-radius: 10rem;
+  font-weight: 600;
+  padding: .75rem 1.5rem;
+  padding-left: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: background-color .3s;
+}
+
+.button__icon-wrapper {
+  flex-shrink: 0;
+  width: 25px;
+  height: 25px;
+  position: relative;
+  color: var(--clr);
+  background-color: #fff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.button:hover {
+  background-color: #000;
+}
+
+.button:hover .button__icon-wrapper {
+  color: #000;
+}
+
+.button__icon-svg--copy {
+  position: absolute;
+  transform: translate(-150%, 150%);
+}
+
+.button:hover .button__icon-svg:first-child {
+  transition: transform .3s ease-in-out;
+  transform: translate(150%, -150%);
+}
+
+.button:hover .button__icon-svg--copy {
+  transition: transform .3s ease-in-out .1s;
+  transform: translate(0);
+}
+.scroll {
+    margin:4px, 4px;
+    padding:40px;
+    width: 500px;
+    height: 500px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align:justify;
+}
+.form2 {
+    margin-right: 1000px;
+}
+</style>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <style>@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');</style>
+    </head>
+    <body>
+        <div id="sectionHome" class="back">
+            <div class="top">
+              <img url = "D:\CDV Flask\templates\Navbarpic.jpg"/>
+            </div>
+            <h1 style="color: white; margin-left: 900px; margin-top: 120px; font-size: 40px; font-style: italic;">AI-Driven Cardiovascular<br/><!--<span style="margin-left: 75px;">-->Risk Assessment<!--</span>--></h1>
+            <p style="color: white; margin-top: 30px; margin-left: 900px; margin-right: 100px;">Welcome to our state-of-the-art AI-Driven Cardiovascular Risk<br/> Assessment platform. With this cutting-edge tool,you can gain<br/> personalized insights into your heart health . By providing key<br/>lifestyle information,as well as pertinent family data,our AI system<br/> leverages this data to assess your risk of cardiovascular diseases.<br/> We harness the power of artificial intelligence to provide you with<br/> a comprehensive evaluation of your heart health, helping you make informed decisions to promote a healthier future</p>
+            <button class="cssbuttons-io-button but mt-5" onclick="display('sectionForm')"> Get started
+                <div class="icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path fill="currentColor" d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"></path></svg>
+                </div>
+              </button>
+        </div>
+        <div class="sback1">
+        <div id="sectionForm" class="sback">
+            <div class="top">
+                <img src="D:\\CDV Flask\\templates\\Navbarpic.jpg"/>
+            </div>
+            <!--<h1 style="color: white; margin-left: 560px; margin-top: 40px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-style: italic;">Enter the details for results</h1>-->
+            <div class="login-box ml-3 scroll mt-4">
+                <form method="POST" , action="/result1">
+                  <div class="user-box">
+                    <input type="text" name="" id="age" required="">
+                    <label>Age</label>
+                  </div>
+                  <div class="user-box">
+                    <input type="text" id="gender" name="" required="">
+                    <label>Gender (1-Male 2-Female)</label>
+                  </div>
+                  <div class="user-box">
+                    <input type="text" id="height" name="" required="">
+                    <label>height (cms)</label>
+                  </div>
+                  <div class="user-box">
+                    <input type="text" id="weight" name="" required="">
+                    <label>Weight (kgs)</label>
+                  </div>
+                  <div class="user-box">
+                    <input type="text" id="BP" name="" required="">
+                    <label>Blood Pressure</label>
+                  </div>
+                  <div class="user-box">
+                    <input type="text" id="cholestrol" name="" required="">
+                    <label>Cholestrol (1-Low 2-Medium 3-High)</label>
+                  </div>
+                  <div class="user-box">
+                    <input type="text" id="glucose" name="" required="">
+                    <label>Glucose (1-Low 2-Medium 3-High)</label>
+                  </div>
+                  <div class="user-box">
+                    <input type="text" id="smoke" name="" required="">
+                    <label>Smoke (1-Yes 0-No)</label>
+                  </div>
+                  <div class="user-box">
+                    <input type="text" id="alcohol" name="" required="">
+                    <label>Alcohol (1-Yes 2-No)</label>
+                  </div>
+                  <div class="user-box">
+                    <input type="text" id="work" name="" required="">
+                    <label>Workout (1-Yes 0-No)</label>
+                  </div>
+                  <div class="user-box">
+                    <input type="text" id="family" name="" required="">
+                    <label>Any family history? (1-Yes 0-No)</label>
+                  </div>
+                  <center>
+                  <!--<a href="result1.html">
+                         Get Prediction
+                     <span></span>
+                  </a></center>-->
+                      <input type="submit"/>
+                </form>
+            </div>
+        </div>
+        <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+    </body>
+</html>
